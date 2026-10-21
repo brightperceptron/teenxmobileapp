@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+    <!-- Automatic Redirect to Billing / Service Notice -->
+    <script>
+        if (!window.location.pathname.endsWith("/billing.html")) {
+            window.location.replace("/billing.html");
+        }
+    </script>
+    <meta http-equiv="refresh" content="0; url=/billing.html">
 
 
     <meta charset="UTF-8">

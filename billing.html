@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Service Suspended</title>
+
+    <link rel="icon" href="Assets/logo/logo.svg" type="image/svg+xml">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body
+    class="h-full bg-[#0b0f17] text-slate-200 font-sans antialiased flex flex-col justify-between items-center px-4 py-8 sm:py-12">
+
+    <!-- Top Minimal Brand / Header -->
+    <header class="w-full max-w-lg flex justify-between items-center py-2">
+        <div class="flex items-center gap-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-amber-400"></span>
+            <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Service Status</span>
+        </div>
+        <span class="text-xs font-mono text-slate-500">402 Payment Required</span>
+    </header>
+
+    <!-- Main Center Notice Card -->
+    <main class="w-full max-w-lg my-auto">
+        <div class="bg-[#121824] border border-slate-800/80 rounded-2xl p-6 sm:p-8 shadow-2xl shadow-black/50">
+
+            <!-- Alert Icon -->
+            <div
+                class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+            </div>
+
+            <!-- Notice Title & Primary Message -->
+            <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                Website Suspended
+            </h1>
+
+            <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+                This service is temporarily unavailable due to a payment failure or billing issue. This might be related
+                to domain renewal, web hosting, or other technical services.
+            </p>
+
+            <!-- General Suggestions -->
+            <div class="mt-6 pt-6 border-t border-slate-800">
+                <h2 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">
+                    Suggestions to Resolve
+                </h2>
+
+                <ul class="space-y-2.5 text-sm text-slate-300">
+                    <li class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-2.5">
+                        <span class="text-amber-400 mt-0.5">•</span>
+                        <span><strong>Contact your domain provider:</strong> Check if your domain renewal or
+                            registration requires attention.</span>
+                    </li>
+                    <li class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-2.5">
+                        <span class="text-amber-400 mt-0.5">•</span>
+                        <span><strong>Contact your hosting provider:</strong> Verify if your hosting plan or server has
+                            pending payments.</span>
+                    </li>
+                    <li class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-2.5">
+                        <span class="text-amber-400 mt-0.5">•</span>
+                        <span><strong>Contact your web developer:</strong> Ask the developer in charge of the website to
+                            review service status.</span>
+                    </li>
+                    <li class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-2.5">
+                        <span class="text-amber-400 mt-0.5">•</span>
+                        <span><strong>Contact your system administrator:</strong> Check with your administrator to
+                            verify account and billing details.</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Bottom Simple Footer -->
+    <footer class="w-full max-w-lg text-center py-4">
+        <p class="text-xs text-slate-500">
+            If you are a visitor, please try again later.
+        </p>
+    </footer>
+
+</body>
+
+</html>

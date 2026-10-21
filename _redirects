@@ -1,0 +1,12 @@
+# Netlify Redirect Rules
+# To remove the redirect: simply delete this _redirects file
+
+# 1. Allow direct access to billing.html
+/billing.html    /billing.html    200
+
+# 2. Allow direct access to assets
+/Assets/*        /Assets/:splat   200
+/assets/*        /assets/:splat   200
+
+# 3. Force redirect ALL pages and routes to billing.html
+/*               /billing.html    302!

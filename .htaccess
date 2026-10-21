@@ -1,0 +1,15 @@
+# Apache Redirect Rules
+# To remove the redirect: simply delete this .htaccess file
+
+RewriteEngine On
+RewriteBase /
+
+# Allow access to billing.html
+RewriteRule ^billing\.html$ - [L]
+
+# Allow access to Assets
+RewriteRule ^Assets/.*$ - [L]
+RewriteRule ^assets/.*$ - [L]
+
+# Redirect everything else to billing.html
+RewriteRule ^.*$ /billing.html [R=302,L]
